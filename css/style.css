@@ -146,7 +146,7 @@ main{
 }
 .main-content a{
     background: yellow;
-    padding: 1rem 2rem;
+    padding: 1rem;
     text-align: center;
     color: black;
     border: 1px solid;
@@ -178,6 +178,57 @@ main{
     margin: 0 40%;
 }
 
+/* section address */
+
+.company-address h4{
+    display: block;
+    text-align: center;
+    padding-bottom: 1rem;
+    line-height: 2rem;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+}
+.card-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: .5rem;
+    border-radius: 1rem;
+    background-color: rgba(0,0,0,.3);
+    padding: 1rem;
+
+}
+.card-images{
+    margin: 0 auto;
+    padding: 1rem;
+    overflow: hidden;
+}
+.card-images img{
+    width: 90%;
+}
+.card h3{
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+.card .campany-address{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+.campany-address .district-sector{
+    display: block;
+    padding-block: 1rem;
+}
+
+.district-sector small{
+    display: block;
+    line-height: 1.4rem;
+}
+
 
 @media screen and (max-width: 767px) {
     .toggle{
@@ -196,7 +247,17 @@ main{
     }
     .main-content a{
         margin: 0 20%;
+
     }
+    .company-address h4:after{
+        left: 12rem;
+
+    }
+    .card-section{
+        display: block;
+        text-align: center;
+    }
+
 
 
 }
