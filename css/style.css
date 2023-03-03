@@ -14,6 +14,8 @@
     --background-color: #000814;
     --padding-header:  1rem .8rem;
     --font-size-larg: 1.4rem;
+    --link-color: yellow;
+    --text-color:rgb(184, 181, 236);
 
 }
 body{
@@ -60,8 +62,8 @@ body{
 }
 .logo .campany-name{
     text-align: center;
-
     text-transform: uppercase;
+    color: var(--link-color);
     font-size: var(--font-size-larg);
     font-weight: bold;
 }
@@ -80,7 +82,7 @@ body{
 }
 
 .nav-item a{
-    color: rgb(184, 181, 236);
+    color: var(--link-color);
     font-weight: bold;
     font-size: 1rem;
 }
@@ -90,7 +92,6 @@ body{
    justify-self: center;
    cursor: pointer;
    display: none;
-
 }
 .toggle:hover{
     transform: scale(.9);
@@ -103,15 +104,81 @@ body{
     top: 15%;
     width: 100%;
     justify-content: center;
-    transform: scale(1);
-    transition: none;
-
+    transform: translate(40deg ) rotate(3deg);
+    transition: all 300ms ease;
+    border-radius: 1rem;
+    z-index: 20;
 }
 
 .nav-menu.active li{
     padding: 1rem;
 
 }
+
+/* main body */
+
+main{
+    z-index: -1;
+    width: 100%;
+    min-height: 100vh;
+    background: url('../images/dark-background.jpg') no-repeat center center/cover ;
+}
+.main-content{
+    display: block;
+    padding-block: 3rem;
+}
+.main-content h1{
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 1.4;
+    text-align: center;
+    animation: anime 3s ease-in-out;
+}
+.main-content p{
+    width: 80%;
+    margin: 2.5rem auto;
+    line-height: 2.5rem;
+    padding: 2rem 0;
+    font-style: italic;
+
+
+    /* text-align: center; */
+}
+.main-content a{
+    background: yellow;
+    padding: 1rem 2rem;
+    text-align: center;
+    color: black;
+    border: 1px solid;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    transition: all 1s ease;
+
+}
+.main-content a:hover{
+    cursor: pointer;
+    background-color: rgb(185, 185, 8);
+    color: white;
+    font-weight: bold;
+}
+@keyframes pulse {
+    0% { transform: scale(0.3); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  @keyframes anime{
+    0% { transform: scale(0.3); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  a {
+    animation: pulse 2s ease-in-out ;
+  }
+  .main-content a{
+    margin: 0 40%;
+}
+
+
 @media screen and (max-width: 767px) {
     .toggle{
         display: block;
@@ -119,31 +186,17 @@ body{
     .nav-menu{
         display: none;
     }
+    .main-content h1{
+        font-size: 1.8rem;
+        margin: .8rem 0;
 
-}
+    }
+    .main-content p{
+        font-size: .9rem;
+    }
+    .main-content a{
+        margin: 0 20%;
+    }
 
-/* main body */
 
-main{
-    width: 100%;
-    min-height: 100vh;
-    background: url('../images/dark-background.jpg') no-repeat center center/cover ;
-}
-.main-content{
-    display: block;
-    padding-block: 2rem;
-}
-.main-content h1{
-    font-weight: bold;
-    font-size: 3.5rem;
-    line-height: 1.4;
-    text-align: center;
-}
-.main-content p{
-    width: 80%;
-    margin: 0 auto;
-    line-height: 2.5rem;
-    padding: 2rem 0;
-    font-style: italic;
-    /* text-align: center; */
 }
