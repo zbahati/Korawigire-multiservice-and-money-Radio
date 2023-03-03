@@ -146,7 +146,7 @@ main{
 }
 .main-content a{
     background: yellow;
-    padding: 1rem 2rem;
+    padding: 1rem;
     text-align: center;
     color: black;
     border: 1px solid;
@@ -181,7 +181,7 @@ main{
 /* section address */
 
 .company-address h4{
-    display: blcok;
+    display: block;
     text-align: center;
     padding-bottom: 1rem;
     line-height: 2rem;
@@ -206,7 +206,7 @@ main{
     overflow: hidden;
 }
 .card-images img{
-    width: 100%;
+    width: 90%;
 }
 .card h3{
     text-transform: uppercase;
