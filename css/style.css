@@ -396,6 +396,25 @@ main{
     .staff .card-staff .staff-image{
         width: 60%;
     }
+    .trainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .trainer-card{
+        display: block;
+    }
+    .image-card{
+        width: 80%;
+        margin: 0 auto;
+        align-items: center;
+        display: block;
+        justify-content: center;
+    }
+    #trainer-title{
+        padding: 1rem;
+        text-align: center;
+        font-size: 1.3rem;
+    }
 
 
 
