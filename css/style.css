@@ -27,6 +27,9 @@ body{
     color: white;
     overflow-x: hidden;
 }
+h3{
+    /* color: rgb(107, 0, 128); */
+}
 .container{
     width: 85%;
     margin: 0 auto;
@@ -188,6 +191,7 @@ main{
     padding-bottom: 1rem;
     line-height: 2rem;
     font-size: 1.7rem;
+    color: var(--link-color);
     text-transform: uppercase;
 }
 .card-section{
@@ -241,6 +245,7 @@ main{
     display: block;
     text-align: center;
     padding-bottom: 1rem;
+    color: var(--link-color);
     line-height: 2rem;
     font-size: 1.7rem;
     text-transform: uppercase;
@@ -259,6 +264,8 @@ main{
     gap: 1rem;
 }
 .card-staff{
+    animation: pulse 4s ease-in-out ;
+    /* animation: anime 3s ease-in-out; */
     padding: 1rem;
     border-radius: 1rem;
     background: var(--card-background);
@@ -269,9 +276,12 @@ main{
     aspect-ratio: 1/1;
     border-radius: 50%;
     overflow: hidden;
+
 }
+
 .staff .card-staff .staff-image img{
     width: 100%;
+
 }
 
 .staff .card-staff .staff-description{
@@ -290,6 +300,58 @@ main{
     font-size: .8rem;
 }
 
+/* slide sections our proffessional staff */
+
+.trainer-card{
+    animation: pulse 4s ease-in-out ;
+    border-radius: 1rem;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding:0 .6rem .6rem;
+}
+
+.image-card{
+    width: 40%;
+    background: var(--card-background);
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    border-radius: 1rem;
+}
+.image-card img{
+    width: 100%;
+}
+
+.trainer{
+    background-color: var(--card-background);
+    display: block;
+    padding-block: 1rem;
+    width: 100%;
+    border-radius: 1rem;
+    transition: all 3s ease-in-out;
+    transform: rotate(360deg);
+    margin: 2rem 0;
+
+}
+.slide-icons{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.slide-icons i:hover{
+    color: var(--link-color);
+    transition: all 500ms ease-in-out;
+    transform: scaleX(.7);
+    transform: scaleY(.8);
+}
+
+.trainer-card img{
+    width: 100%;
+}
 
 
 @media screen and (max-width: 767px) {
@@ -329,6 +391,7 @@ main{
     }
     .staff .card-staff .staff-description{
         text-align: center;
+
     }
     .staff .card-staff .staff-image{
         width: 60%;
